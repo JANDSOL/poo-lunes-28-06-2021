@@ -1,27 +1,33 @@
 class Operation:
-    def __init__(self):
-        pass
+    def __init__(self, num1, num2):
+        self.number1 = num1
+        self.number2 = num2
 
     def sum(self):
-        pass
+        return self.number1 + self.number2
 
     def subtraction(self):
-        pass
+        return self.number1 - self.number2
 
     def multiplication(self):
-        pass
+        return self.number1 * self.number2
 
     def integer_division(self):
-        pass
+        if self.number2 != 0: return self.number1 / self.number2
+        return 0
+
+    def integer_division(self):
+        if self.number2 != 0: return self.number1 // self.number2
+        return 0
 
     def residue(self):
-        pass
+        return self.number1 % self.number2
 
     def exponent(self):
-        pass
+        return self.number1 ** self.number2
     
     def show(self):
-        pass
+        print('Operando1={}. Operando2={}'.format(self.number1, self. number2))
 
 
 if __name__ == '__main__':
